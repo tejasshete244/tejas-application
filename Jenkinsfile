@@ -13,7 +13,7 @@ pipeline {
         }
         stage {
             steps {
-                sh "scp -i /mnt/WINDOWSKEYPAIR.pem /mnt/projects/tejas-application/index.html ec2-user@172.31.32.238:/var/www/html/"
+                sh "scp -i /mnt/WINDOWSKEYPAIR.pem /mnt/projects/tejas-application/index.html ec2-user@172.31.36.227:/var/www/html/"
             }
         }
     }
