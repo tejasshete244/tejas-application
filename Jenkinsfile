@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage {
             steps {
-                git clone https://github.com/tejasshete244/tejas-application.git
+                git clone https://github.com/tejasshete244/tejas-application.git -b 22Q2
             }
         }
         stage {
