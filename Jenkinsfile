@@ -7,7 +7,8 @@ pipeline {
     }
     stages {
         stage ('git clone'){
-            steps {
+            steps { 
+                sh "rm -rf *"
                 sh "git clone https://github.com/tejasshete244/tejas-application.git -b 22Q1"
             }
         }
