@@ -2,7 +2,7 @@ pipeline {
     agent {
         label {
             label 'built-in'
-            customWorkspace '/mnt/projects/'
+            customWorkspace '/mnt/projects/1/'
         }
     }
     stages {
@@ -14,7 +14,7 @@ pipeline {
         }
         stage ('deploy'){
             steps {
-                sh "scp -i /mnt/WINDOWSKEYPAIR.pem /mnt/projects/tejas-application/index.html ec2-user@172.31.32.238:/var/www/html/"
+                sh "scp -i /mnt/WINDOWSKEYPAIR.pem /mnt/projects/1/tejas-application/index.html ec2-user@172.31.32.238:/var/www/html/"
             }
         }
     }
